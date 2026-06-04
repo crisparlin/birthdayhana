@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/birthdayhana' : '';
+
 export default function PolaroidGallery() {
   const [currentIdx, setCurrentIdx] = useState(0);
 
@@ -88,7 +90,7 @@ export default function PolaroidGallery() {
               {/* Render Image from public/assets */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
-                src={`/assets/${photos[currentIdx]}`} 
+                src={`${basePath}/assets/${photos[currentIdx]}`} 
                 alt={`Momen Hana - ${currentIdx + 1}`}
                 className="w-full h-full object-cover"
                 loading="lazy"

@@ -3,6 +3,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Volume2, VolumeX, Play, Pause, Music } from "lucide-react";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/birthdayhana' : '';
+
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
@@ -57,7 +59,7 @@ export default function MusicPlayer() {
       {/* HTML5 Audio Player */}
       <audio 
         ref={audioRef} 
-        src="/assets/You'll Be in My Heart.mp4" 
+        src={`${basePath}/assets/You'll Be in My Heart.mp4`} 
         loop 
         preload="auto"
       />
