@@ -165,7 +165,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
         >
           <Star size={12} className="text-yellow-300 fill-yellow-300" />
           <span className="text-white/85 text-xs font-light tracking-[0.25em] uppercase font-sans">
-            June 5, 2026 · Selamat Ulang Tahun
+            May 25, 2026 · Selamat Ulang Tahun
           </span>
           <Star size={12} className="text-yellow-300 fill-yellow-300" />
         </motion.div>

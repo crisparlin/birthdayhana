@@ -468,7 +468,7 @@ export default function Home() {
                 <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
                   <div className="h-px w-8 bg-gradient-to-r from-transparent to-yellow-400/50" />
                   <span className="text-[10px] font-sans font-semibold uppercase tracking-[0.3em] text-amber-600">
-                    June 5, 2026
+                    May 25, 2026
                   </span>
                   <div className="h-px w-8 bg-gradient-to-l from-transparent to-yellow-400/50" />
                 </div>
