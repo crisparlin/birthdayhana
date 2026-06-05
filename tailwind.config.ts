@@ -19,6 +19,7 @@ const config: Config = {
           600: "#83553E",
           700: "#6B422F",
           800: "#543324",
+          850: "#3D2014",
           900: "#2C1A11",
           950: "#1A0F0A",
         },
@@ -27,9 +28,10 @@ const config: Config = {
           100: "#FFFABF",
           200: "#FFF48C",
           300: "#FFE64D",
-          400: "#FFD700", // Sunflower Gold
-          500: "#FFC000", // Sunflower Yellow
-          600: "#E6A100", // Dark Sunflower
+          350: "#FFE020",
+          400: "#FFD700",
+          500: "#FFC000",
+          600: "#E6A100",
           700: "#B87A00",
           800: "#7A5200",
           900: "#4D3400",
@@ -39,6 +41,11 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "chocolate-drizzle": "repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(44, 26, 17, 0.05) 10px, rgba(44, 26, 17, 0.05) 20px)",
+      },
+      fontFamily: {
+        serif: ["Cormorant Garamond", "Playfair Display", "serif"],
+        sans: ["Josefin Sans", "Quicksand", "sans-serif"],
+        handwriting: ["Great Vibes", "Satisfy", "cursive"],
       },
       animation: {
         "float-slow": "float 8s ease-in-out infinite",
@@ -52,6 +59,10 @@ const config: Config = {
         "pulse-gold": "pulseGold 2s infinite",
         "drift-right": "driftRight 15s linear infinite",
         "drift-left": "driftLeft 15s linear infinite",
+        "aurora": "auroraShift 5s linear infinite",
+        "twinkle": "twinkle 3s ease-in-out infinite",
+        "heartbeat": "heartBeat 1.6s ease-in-out infinite",
+        "gentle-float": "gentleFloat 6s ease-in-out infinite",
       },
       keyframes: {
         float: {
@@ -84,6 +95,26 @@ const config: Config = {
         pulseGold: {
           "0%, 100%": { boxShadow: "0 0 0 0 rgba(255, 215, 0, 0.6)" },
           "50%": { boxShadow: "0 0 0 10px rgba(255, 215, 0, 0)" },
+        },
+        auroraShift: {
+          "0%": { backgroundPosition: "0% center" },
+          "100%": { backgroundPosition: "200% center" },
+        },
+        twinkle: {
+          "0%, 100%": { opacity: "0.2", transform: "scale(0.8)" },
+          "50%": { opacity: "1", transform: "scale(1.25)" },
+        },
+        heartBeat: {
+          "0%, 100%": { transform: "scale(1)" },
+          "15%": { transform: "scale(1.28)" },
+          "30%": { transform: "scale(1)" },
+          "45%": { transform: "scale(1.16)" },
+          "60%": { transform: "scale(1)" },
+        },
+        gentleFloat: {
+          "0%, 100%": { transform: "translateY(0px) rotate(0deg)" },
+          "33%": { transform: "translateY(-12px) rotate(2deg)" },
+          "66%": { transform: "translateY(-6px) rotate(-1deg)" },
         },
       },
     },
